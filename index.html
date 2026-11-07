@@ -67,6 +67,10 @@ button .code { font: 400 11.5px/1 var(--mono); opacity: .7; }
 .nojs { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: grid; gap: 6px; }
 .nojs strong { font: 700 15px/1.3 var(--display); }
 .nojs p { margin: 0; color: var(--muted); font-size: 14px; }
+.seal { font: 400 13px/1.55 var(--body); color: var(--muted); border-top: 1px solid var(--line); padding: 16px 4px 0; margin: 0; }
+.seal a { color: inherit; text-decoration: none; }
+.seal a:hover, .seal a:focus-visible { text-decoration: underline; }
+.seal a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
 
 @media (max-width: 879px) {
   .wrap { padding-block: 12px 40px; gap: 12px; }
@@ -159,6 +163,7 @@ button .code { font: 400 11.5px/1 var(--mono); opacity: .7; }
       </div>
     </section>
   </div>
+  <footer class="seal"><a href="https://bymoonlab.com" target="_blank" rel="noopener">by MoonLab</a></footer>
 </div>
 
 <script>(function webpackUniversalModuleDefinition(root, factory) {
